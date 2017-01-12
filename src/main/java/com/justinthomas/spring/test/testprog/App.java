@@ -9,6 +9,10 @@ public class App {
     	
         Person person = (Person)context.getBean("person");
         person.speak();
+        System.out.println(person);
+        
+        Address address = (Address)context.getBean("address");
+        System.out.println(address);
         ((ClassPathXmlApplicationContext)context).close();
     }
 }
